@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# MoodMate ❤️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Your personal AI-powered mental wellness companion.**
 
-## Available Scripts
+MoodMate is a comprehensive web application designed to provide a safe and supportive space for users to track their mental well-being, find relief through guided exercises, and access helpful resources. Built with a modern tech stack, it offers a seamless, responsive, and engaging user experience.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   **AI-Powered Journaling ("Ask Aura"):** Users can write down their thoughts and receive instant, compassionate feedback and actionable suggestions from an AI assistant powered by the Gemini API.
+-   **AI Journal Prompts:** Never run out of things to write about. Get a thoughtful, open-ended prompt from Aura with the click of a button.
+-   **Mood Tracking:** A beautiful, color-coded slider allows for nuanced mood tracking on a scale from "Awful" to "Great".
+-   **Journal History & AI Summaries:** View past entries and get an AI-generated summary of your mood trends and themes from the past week.
+-   **Mental Wellness Assessment:** A quick, 5-question check-in to help users get a snapshot of their current stress levels.
+-   **Anxiety Relief Exercises:** A dedicated section with guided exercises, including:
+    -   Box Breathing with an interactive timer.
+    -   5-4-3-2-1 Grounding technique.
+    -   Progressive Muscle Relaxation.
+    -   Mindful Observation.
+-   **Gamified Rewards:** A reward system that tracks completed exercises and congratulates the user, encouraging consistent practice.
+-   **Soothing Music Player:** A built-in ambient music player in the Relief section to enhance relaxation.
+-   **Curated Resources:** A hand-picked list of helpful videos and guides for stress management.
+-   **User Feedback System:** An integrated star rating and review system where users can share their thoughts.
+-   **Light & Dark Mode:** A beautiful, persistent light/dark theme toggle for user comfort.
+-   **Fully Responsive Design:** A seamless experience on all devices, from mobile phones to desktops.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   **Frontend:** [React.js](https://reactjs.org/)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **AI Functionality:** [Google Gemini API](https://ai.google.dev/)
+-   **Audio Synthesis:** [Tone.js](https://tonejs.github.io/)
+-   **Local Storage:** All user data (journal entries, feedback, etc.) is saved securely in the browser's `localStorage`.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy up and running, follow these simple steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+You need to have [Node.js](https://nodejs.org/en/) (which includes npm) installed on your computer.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation & Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/moodmate-app.git](https://github.com/your-username/moodmate-app.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd moodmate-app
+    ```
+3.  **Install NPM packages:**
+    ```bash
+    npm install
+    ```
+4.  **Enable Music Player:**
+    Open the `public/index.html` file and add this script tag inside the `<head>` section:
+    ```html
+    <script src="[https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js](https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js)"></script>
+    ```
+5.  **Enable AI Features (Important):**
+    -   Get a free Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+    -   Run the app using the command below.
+    -   A yellow banner will appear at the top of the app. Paste your API key into the input field and click "Save Key". The key will be saved in your browser's local storage for future use.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6.  **Start the application:**
+    ```bash
+    npm start
+    ```
+    This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 👥 Credits
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project was brought to life by a dedicated team:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   **Developer:** Aryan Jaiswal
+-   **Designer:** Alok Jha
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the `LICENSE` file for details.
