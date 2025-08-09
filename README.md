@@ -59,17 +59,13 @@ You need to have [Node.js](https://nodejs.org/en/) (which includes npm) installe
     ```bash
     npm install
     ```
-4.  **Enable Music Player:**
-    Open the `public/index.html` file and add this script tag inside the `<head>` section:
-    ```html
-    <script src="[https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js](https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js)"></script>
     ```
-5.  **Enable AI Features (Important):**
+4.  **Enable AI Features (Important):**
     -   Get a free Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
     -   Run the app using the command below.
     -   A yellow banner will appear at the top of the app. Paste your API key into the input field and click "Save Key". The key will be saved in your browser's local storage for future use.
 
-6.  **Start the application:**
+5.  **Start the application:**
     ```bash
     npm start
     ```
